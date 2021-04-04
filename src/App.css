@@ -58,7 +58,7 @@ body{
 /* -------------MENU LINKS ------------- */
 
 nav a.nav-link{
-  /* font-weight: 5000; */
+  font-weight: 500;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -69,4 +69,6 @@ nav ul li {
 
 .navbar-nav > li > a {
   color: var(--primary-white) !important;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
