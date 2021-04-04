@@ -1,8 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from "./Components/Navbar.js"
 function App() {
   return (
-    <h2>Personal Portfolio- Dipesh</h2>
+    <Navbar />
   );
 }
 
