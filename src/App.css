@@ -49,6 +49,7 @@
 }
 body{
   font-family: 'Roboto Condesed" sans-serif';
+
 }
 /*********************************** NAVBAR ********************************/
 .logo {
@@ -71,4 +72,29 @@ nav ul li {
   color: var(--primary-white) !important;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+}
+
+/*********************************** HEADER ********************************/
+
+.header-wraper {
+  position: relative;
+  background: url(background-img.png) no repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+}
+
+.main-info h1 {
+  color:  orange;
+  text-transform: uppercase;
 }
