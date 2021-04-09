@@ -6,7 +6,6 @@ import mytown from "../town.png";
 const View1 = () => {
     return (
         <div className= "header-wraper" id="2">
-            <section2>
             <div className="main-info">
                 <h1>About My Town</h1>
                 <img src= {mytown} alt="Nepal" width="600" height="400" />
@@ -17,7 +16,7 @@ const View1 = () => {
                     </p>
                 </div>
             </div>
-            </section2>
+            
         </div>
     )
 }
