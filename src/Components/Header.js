@@ -1,10 +1,13 @@
 import React from "react";
 import Typed from "react-typed";
+import View1 from './View1';
 
 const Header = () => {
     return (
-        <div className= "header-wraper">
+        <div className= "header-wraper" id="1">
+            <section1>
             <div className="main-info">
+            
                 <h1>Dipesh Timilsina</h1>
                 <Typed
                     className="typed-text"
@@ -25,9 +28,9 @@ const Header = () => {
             international learning experience. 
         </p>
         </div>
-         <a href= "https://bagskingdom.com" className="btn-main-contact">Get to know about my town!</a>
+         <a href= "/#2" className="btn-main-contact">Get to know about my town!</a>
             </div>
-            
+        </section1>
         </div>
     )
 }
