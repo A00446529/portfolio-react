@@ -5,10 +5,12 @@ import Header from "./Components/Header.js";
 import View1 from "./Components/View1.js";
 import Particles from "react-particles-js";
 import Footer from "./Components/Footer.js";
+import {BrowserRouter} from 'react-router-dom'; 
 
 function App() {
   return (
     <>
+    <BrowserRouter>
     <Particles 
       params= {{
         particles: {
@@ -26,6 +28,7 @@ function App() {
     <Header />
     <View1 />
     <Footer />
+    </BrowserRouter>
     </>
   );
 }

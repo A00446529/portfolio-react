@@ -1,9 +1,13 @@
 import React from "react";
 import Typed from "react-typed";
+import View1 from './View1';
+import town from "../my-town.png"
 
+import {Switch,Route,Redirect, withRouter} from 'react-router-dom';
 const Header = () => {
     return (
         <div className= "header-wraper">
+            <Switch>
             <div className="main-info">
                 <h1>Dipesh Timilsina</h1>
                 <Typed
@@ -13,7 +17,9 @@ const Header = () => {
                     backSpeed={20}
                     loop 
                     />
-        
+                        <p><img src= {"./my-town.png"} alt="Nepal" width="500" height="600" /> </p>
+
+
         <div className= "about-me">
             <p>
             Hello, I am Dipesh and I am a developer. I come from Nepal and I am an extrovert. I am a techie from heart
@@ -27,9 +33,12 @@ const Header = () => {
         </div>
          <a href= "https://bagskingdom.com" className="btn-main-contact">Get to know about my town!</a>
             </div>
-            
+            <Route path= "/aboutme" component={Header}/>
+            <Route path= "/abouttown" component={View1}/>
+            <Redirect to= "/aboutme"/>
+        </Switch>
         </div>
     )
 }
 
-export default Header;
+export default withRouter(Header);
