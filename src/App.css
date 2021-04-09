@@ -54,8 +54,12 @@ body{
 
 }
 /*********************************** NAVBAR ********************************/
+nav{
+  z-index: 2;
+}
 .logo {
   width: 16.25rem;
+  
 }
 
 /* -------------MENU LINKS ------------- */
@@ -126,6 +130,25 @@ nav ul li {
   padding: 5px 6px 6px 6px;
   color: var(--primary-white);
   margin: 2rem;
+  z-index: 1;
 
 }
 
+/* ***************** Particles JS ******************** */
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/* ***************** About Me Div ******************** */
+
+.about-me{
+  border: 2px solid var(--primary-white);
+  color:rgb(255, 255, 255);
+  z-index: 1;
+
+
+}
