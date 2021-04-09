@@ -1,5 +1,7 @@
 import React from 'react';
-
+import cold from '../cold.png';
+import mild from '../mild.png';
+import sunny from '../sunny.png';
 export default class City extends React.Component{
     constructor(props){
         super (props)
@@ -34,6 +36,23 @@ export default class City extends React.Component{
             <p>Weather right now</p>
             <button onClick={this.getTemperature}>Get Temperature</button>
             <p><b>Current Temperature: </b>{this.state.temperature}</p>
+            {(() => {
+                if (this.state.temperature >=20){
+                    return (
+                        <img src={sunny}/>
+                    )
+                } else if(this.state.temperature >10 && this.state.temperature <20){
+                    return (
+                        <img src={mild}/>
+                    )
+                }
+                else{
+                    return (
+                        <img src={cold}/>
+                    )
+                }
+            }
+            )()}
             </div>
         )
 
