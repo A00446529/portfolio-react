@@ -37,10 +37,6 @@
   }
 }
 
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 
@@ -90,6 +86,11 @@ nav ul li {
   height: 90vh;
 }
 
+.weather {
+  background: url(background-img.png);
+  color:#fff;
+  text-align: center;
+}
 
 .main-info{
   display: flex;
@@ -146,6 +147,16 @@ nav ul li {
 /* ***************** About Me Div ******************** */
 
 .about-me{
+  border: 2px solid var(--primary-white);
+  color:rgb(255, 255, 255);
+  z-index: 1;
+
+
+}
+
+/* ***************** About My Town Div ******************** */
+
+.about-town{
   border: 2px solid var(--primary-white);
   color:rgb(255, 255, 255);
   z-index: 1;
